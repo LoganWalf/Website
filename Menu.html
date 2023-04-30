@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles.css">
+  <title>Menu</title>
+</head>
+<body>
+  <div class="ContentContainer">
+  <header>
+    <h1>Texas Roadhouse</h1>
+    <nav>
+      <ul class="NavList">
+        <li><a href="MainMenu.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="menu.html">Menu</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Menu</h2>
+      <div>
+        <figure class="FoodItem">
+          <img src="https://www.shekitchen.com/wp-content/uploads/2020/11/texas-road-house-steak-recipe-She-Kitchen.jpg" alt="Steak">
+          <h2 class="DishTitles">Steak</h2>
+          <p>Description: A juicy sirloin steak cooked to perfection.</p>
+          <p>Calories: 400</p>
+          <p>Price: $15.99</p>
+          <button id="SteakButton">Add to Order</button>
+        </figure>
+        <figure class="FoodItem">
+          <img src="https://www.texasroadhouse.com/sites/default/files/styles/3x2_image/public/2021-09/full-slab-ribs.jpg?itok=TqbOKyp_" alt="Ribs">
+          <h2 class="DishTitles">Ribs</h2>
+          <p>Description: Tender baby back ribs with a tangy BBQ sauce.</p>
+          <p>Calories: 600</p>
+          <p>Price: $18.99</p>
+          <button id="RibsButton">Add to Order</button>
+        </figure>
+        <figure class="FoodItem">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/52/3c/e3/juicy-burger-with-generous.jpg" alt="Burger">
+          <h2 class="DishTitles">Burger</h2>
+          <p>Description: A classic cheeseburger with all the fixings.</p>
+          <p>Calories: 800</p>
+          <p>Price: $12.99</p>
+          <button id="BurgerButton">Add to Order</button>
+        </figure>
+        <figure>
+          <div>
+           <img src="https://s3-media0.fl.yelpcdn.com/bphoto/ozpJYBIn_1H3P4zkDpT7Tg/o.jpg" alt="Steak Fries">
+           <h2>Steak Fries</h2>
+           <p>Description: A flower of steak fries ready to be dipped and enjoyed.</p>
+           <p>Calories: 300</p>
+           <p>Price: $4.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://recipele.com/wp-content/uploads/2022/12/image-6.jpg" alt="Country Fired Chicken Steak">
+           <h2>Country Fried Chicken Steak</h2>
+           <p>Description: A delicious fried chicken steak covered in gravy with sides!</p>
+           <p>Calories: 1800</p>
+           <p>Price: $16.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://dfv6pkw99pxmo.cloudfront.net/wp-content/uploads/2022/04/Texas_roadhouse-ribs.jpg" alt="Ribs">
+           <h2>Ribs</h2>
+           <p>Description: Huge ribs witha  side of mashed potatos and gravy.</p>
+           <p>Calories: 1500</p>
+           <p>Price: $13.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/f4/e3/72/20210509-115047-largejpg.jpg" alt="Fish">
+           <h2>Glazed Fish</h2>
+           <p>Description: a glazen fish with a side of veggies</p>
+           <p>Calories: 1100</p>
+           <p>Price: $11.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/ee/93/bd/texas-roadhouse.jpg" alt="Loaded Baked Potato">
+           <h2>Loaded Baked Potato</h2>
+           <p>Description: a loaded baked potato witha  side of corn and hamburger steak with swiss cheese</p>
+           <p>Calories: 2300</p>
+           <p>Price: $19.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://img.restaurantguru.com/r6c1-Texas-Roadhouse-food-2021-09-280.jpg" alt="Steak and potatos">
+           <h2>Steak n Potatos</h2>
+           <p>Description: a delectable steak covered in sauteed mushrooms and mashed potatos with gravy</p>
+           <p>Calories: 2500</p>
+           <p>Price: $21.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+         <figure>
+          <div>
+           <img src="https://www.texasroadhouse.com/sites/default/files/styles/3x2_image/public/2021-09/strawberry-cheesecake.jpg?itok=9jqbM_Rr" alt="Strawberry Cheesecake">
+           <h2>Strawberry Cheesecake</h2>
+           <p>Description: a freshly served Strawberry Cheesecake</p>
+           <p>Calories: 900</p>
+           <p>Price: $3.99</p>
+           <button>Add to Order</button>
+          </div>
+         </figure>
+        <!-- Add more menu items here -->
+      </div>
+      <form>
+        <div id="OrderContents">
+        <h3>Your Order</h3>
+        <ul id="OrderItemHolder">
+          <ul id="OrderItemHolder">
+            <li>Steak - $15.99</li>
+            <li>Ribs - $18.99</li>
+            <li>Burger - $12.99</li>
+          </ul>
+          <p id="SubTotal"></p>
+          <p id="Tax"></p>
+          <p id="Total"></p>
+          <p id="Calories"></p>
+        </div>
+          <h3>Order Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address"><br>
+          <label for="credit-card">Credit Card Number:</label>
+          <input type="text" id="credit-card" name="credit-card"><br>
+          <button>Submit Order</button>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2023 Texas Roadhouse</p>
+    </footer>
+    </div>
+  </body>
+  
+  <script src="Scripts.js"></script>
+  </html>
